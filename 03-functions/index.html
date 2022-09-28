@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="index.js"></script>
+    <script>
+
+        printConnectedText("hello!", "How are you?");
+        printSum5Plus5();
+
+        printSum(10, 5);
+        printSum(111, 40);
+        printSum(99, 1);
+
+        let x1 = 6;
+        let x2 = 7;
+        printSum(x1, x2);
+
+        let mySum = getSum(5, 5);
+        alert(mySum);
+
+        function printSum5Plus5() {
+            let sum = 5 + 5;
+            document.write(`<p>${sum}</p>`);
+        }
+
+        function printSum(number1, number2) {
+            let sum = number1 + number2;
+            document.write(`<p>${sum}</p>`);
+        }
+
+        function getSum(number1, number2) {
+            let sum = number1 + number2;
+            return sum;
+        }
+
+
+
+    </script>
+</body>
+</html>

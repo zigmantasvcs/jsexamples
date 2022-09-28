@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let name = "Zigmantas";
+        let surname = "Rackauskas";
+        let shoppingCartItem = "Computer";
+        let sentenceShort = "Nice day!";
+
+        document.write("<h1>" + name + " " + surname + "</h1>");
+        document.write(`${name} ${surname}`);
+
+        console.log(shoppingCartItem.concat(" I am going to buy!"));
+        console.log(shoppingCartItem);
+
+        let result = sentenceShort.indexOf("day");
+        console.log(result);
+
+        let part = sentenceShort.substring(0, result);
+        console.log(part);
+
+        let partWithoutSpaces = part.replace(" ", "!");
+        console.log(partWithoutSpaces);
+
+    </script>
+</body>
+</html>

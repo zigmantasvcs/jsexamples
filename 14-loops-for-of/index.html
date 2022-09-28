@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="library.js"></script>
+    <script>
+
+        let students = ["John", "Ana", "David", "Zita"];
+        // before loops we did like this:
+        // console.log(students[0]);
+        // console.log(students[1]);
+        // console.log(students[2]);
+        // console.log(students[3]);
+
+        for (const student of students) {
+            console.log(student);
+        }
+
+        checkIfStudentExist(students, "Zigmantas");
+        checkIfStudentExist(students, "David");
+        checkIfStudentExistv2(students, "David");
+
+    </script>
+</body>
+</html>
