@@ -27,3 +27,13 @@ function checkIfStudentExistv3(students, student){
         console.log(`Student ${student} exist`);
     }
 }
+
+// Write a function which accepts an array of text elements. Function should print array elements into the list. Use <ul> and <li> elements for it. Use for..of loop.
+function printArrayToTheList(array){
+    document.write("<ul>");
+    for (const element of array) {
+        document.write("<li>" + element + "</li>")
+    }
+    document.write("</ul>");
+
+}
