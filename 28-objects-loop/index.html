@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="library.js"></script>
+    <script>
+        let car = {
+            model: "XC70",
+            brand: "Volvo",
+            color: "Silver"
+        };
+
+        for (const key in car) {
+            const propertyValue = car[key];
+            console.log(key);
+            console.log(propertyValue);
+            document.write(`${key}: ${propertyValue}<br>`);
+        }
+
+        document.write(car);
+
+        console.log(doesKeyExistInTheObject(car, "name"));
+        console.log(doesKeyExistInTheObject(car, "model"));
+
+    </script>
+</body>
+</html>
