@@ -1,0 +1,22 @@
+{
+	"flightData": [
+		{
+			"outbound": "STO",
+			"inbound": "LON",
+			"outboundDateTime": "2022-11-01 10:00:00",
+			"inboundDateTime": "2022-11-01 11:45:00"
+		},
+		{
+			"outbound": "STO",
+			"inbound": "LON",
+			"outboundDateTime": "2022-11-01 11:00:00",
+			"inboundDateTime": "2022-11-01 12:43:00"
+		},
+		{
+			"outbound": "STO",
+			"inbound": "LON",
+			"outboundDateTime": "2022-11-01 13:00:00",
+			"inboundDateTime": "2022-11-01 14:45:00"
+		}
+	]
+}

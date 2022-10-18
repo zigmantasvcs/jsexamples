@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="data.js"></script>
+    <script src="library.js"></script>
+    <script>
+
+        console.log(getEmployeeWithBiggestSalary(getEmployeeData()));
+
+
+        // sort
+        let numbers = [5, 4, 7, 9];
+
+        let sortedNumbers = numbers.sort((a, b) => a - b);
+
+        console.log(sortedNumbers);
+
+        // sort with text
+        let names = ["John", "Ana", "Ana", "Eva"];
+
+        let sortedNames = names.sort();
+
+        console.log(sortedNames);
+
+        let descendingOrderOfNames = names.sort((a, b) => {
+            console.log(a + " " + b);
+            if(a > b) return -1;
+            if(a < b) return 1;
+            return 0;
+        });
+
+        console.log(descendingOrderOfNames);
+
+        console.log(getEmployeeWithBiggestSalaryWithSort(getEmployeeData()));
+
+
+        // order employees in desceding alphabetical order by name
+
+        let employees = getEmployeeData();
+
+        let orderEmployees = employees.sort((a, b) => {
+            if(a.name > b.name) return -1;
+            if(a.name < b.name) return 1;
+            return 0;
+        })
+
+        console.log(orderEmployees);
+
+    </script>
+</body>
+</html>
